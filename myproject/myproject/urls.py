@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^annotated/$', 'cmspost.views.cms_post'),
     url(r'^annotated/(.*)$', 'cmspost.views.process_templates'),
+    url(r'^edit/(.*)$', 'cmspost.views.edit'),
     url(r'^(.*)', "cmspost.views.process"),
     url(r'^logout', logout),
     url(r'^login', login)
